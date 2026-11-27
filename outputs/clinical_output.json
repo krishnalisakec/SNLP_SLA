@@ -1,0 +1,929 @@
+{
+    "preprocessing": {
+        "original_text": "# CLINICAL PATIENT REPORT\r\n\r\n**Document ID:** HNLP-001  \r\n**Department:** General Medicine  \r\n**Document Type:** Clinical Progress Note\r\n\r\n### 1. Patient Information\r\nPatient Name: Sample Patient  \r\nAge: 45 years  \r\nGender: Not specified  \r\nVisit Type: Outpatient Consultation\r\n\r\n### 2. Chief Complaints\r\nThe patient reports fever, persistent cough, headache and fatigue for the last three days.\r\n\r\n### 3. Medical History\r\nThe patient has a history of diabetes mellitus and hypertension. The patient is currently taking metformin for diabetes and medication for hypertension.\r\n\r\n### 4. Clinical Examination\r\nBlood pressure was monitored during the consultation. Heart rate was recorded. The patient reports shortness of breath.\r\n\r\n### 5. Investigation and Findings\r\nBlood tests were performed. Blood glucose levels were elevated. Chest X-ray was suggested for further investigation.\r\n\r\n### 6. Assessment\r\nThe patient has diabetes mellitus and hypertension. Possible respiratory infection is suspected.\r\n\r\nThe patient denies chest pain. No history of asthma was reported.\r\n\r\n### 7. Treatment and Plan\r\nContinue the prescribed diabetes medication. Monitor blood pressure and blood glucose levels. Further investigation is recommended to evaluate the respiratory symptoms.\r\n\r\n### 8. Follow-up\r\nThe patient is advised to return for follow-up after three days or earlier if symptoms worsen.",
+        "cleaned_text": "# CLINICAL PATIENT REPORT **Document ID:** HNLP-001 **Department:** General Medicine **Document Type:** Clinical Progress Note ### 1. Patient Information Patient Name: Sample Patient Age: 45 years Gender: Not specified Visit Type: Outpatient Consultation ### 2. Chief Complaints The patient reports fever, persistent cough, headache and fatigue for the last three days. ### 3. Medical History The patient has a history of diabetes mellitus and hypertension. The patient is currently taking metformin for diabetes and medication for hypertension. ### 4. Clinical Examination Blood pressure was monitored during the consultation. Heart rate was recorded. The patient reports shortness of breath. ### 5. Investigation and Findings Blood tests were performed. Blood glucose levels were elevated. Chest X-ray was suggested for further investigation. ### 6. Assessment The patient has diabetes mellitus and hypertension. Possible respiratory infection is suspected. The patient denies chest pain. No history of asthma was reported. ### 7. Treatment and Plan Continue the prescribed diabetes medication. Monitor blood pressure and blood glucose levels. Further investigation is recommended to evaluate the respiratory symptoms. ### 8. Follow-up The patient is advised to return for follow-up after three days or earlier if symptoms worsen.",
+        "expanded_text": "# CLINICAL PATIENT REPORT **Document ID:** HNLP-001 **Department:** General Medicine **Document Type:** Clinical Progress Note ### 1. Patient Information Patient Name: Sample Patient Age: 45 years Gender: Not specified Visit Type: Outpatient Consultation ### 2. Chief Complaints The patient reports fever, persistent cough, headache and fatigue for the last three days. ### 3. Medical History The patient has a history of diabetes mellitus and hypertension. The patient is currently taking metformin for diabetes and medication for hypertension. ### 4. Clinical Examination Blood pressure was monitored during the consultation. Heart rate was recorded. The patient reports shortness of breath. ### 5. Investigation and Findings Blood tests were performed. Blood glucose levels were elevated. Chest X-ray was suggested for further investigation. ### 6. Assessment The patient has diabetes mellitus and hypertension. Possible respiratory infection is suspected. The patient denies chest pain. No history of asthma was reported. ### 7. Treatment and Plan Continue the prescribed diabetes medication. Monitor blood pressure and blood glucose levels. Further investigation is recommended to evaluate the respiratory symptoms. ### 8. Follow-up The patient is advised to return for follow-up after three days or earlier if symptoms worsen.",
+        "sentences": [
+            "# CLINICAL PATIENT REPORT **Document ID:** HNLP-001 **Department:** General Medicine **Document Type:** Clinical Progress Note ### 1.",
+            "Patient Information Patient Name: Sample Patient Age: 45 years Gender: Not specified Visit Type: Outpatient Consultation ### 2.",
+            "Chief Complaints The patient reports fever, persistent cough, headache and fatigue for the last three days.",
+            "### 3.",
+            "Medical History The patient has a history of diabetes mellitus and hypertension.",
+            "The patient is currently taking metformin for diabetes and medication for hypertension.",
+            "### 4.",
+            "Clinical Examination Blood pressure was monitored during the consultation.",
+            "Heart rate was recorded.",
+            "The patient reports shortness of breath.",
+            "### 5.",
+            "Investigation and Findings Blood tests were performed.",
+            "Blood glucose levels were elevated.",
+            "Chest X-ray was suggested for further investigation.",
+            "### 6.",
+            "Assessment The patient has diabetes mellitus and hypertension.",
+            "Possible respiratory infection is suspected.",
+            "The patient denies chest pain.",
+            "No history of asthma was reported.",
+            "### 7.",
+            "Treatment and Plan Continue the prescribed diabetes medication.",
+            "Monitor blood pressure and blood glucose levels.",
+            "Further investigation is recommended to evaluate the respiratory symptoms.",
+            "### 8.",
+            "Follow-up The patient is advised to return for follow-up after three days or earlier if symptoms worsen."
+        ]
+    },
+    "entities": [
+        {
+            "entity": "h",
+            "type": "TEST",
+            "start": 43,
+            "end": 44,
+            "score": 0.604,
+            "source": "Biomedical Model"
+        },
+        {
+            "entity": "general",
+            "type": "MEDICATION",
+            "start": 68,
+            "end": 75,
+            "score": 0.4431,
+            "source": "Biomedical Model"
+        },
+        {
+            "entity": "medicine",
+            "type": "TEST",
+            "start": 76,
+            "end": 84,
+            "score": 0.6351,
+            "source": "Biomedical Model"
+        },
+        {
+            "entity": "fever",
+            "type": "SYMPTOM",
+            "start": 299,
+            "end": 304,
+            "score": null,
+            "source": "Clinical Vocabulary"
+        },
+        {
+            "entity": "persistent cough",
+            "type": "SYMPTOM",
+            "start": 306,
+            "end": 322,
+            "score": null,
+            "source": "Clinical Vocabulary"
+        },
+        {
+            "entity": "headache",
+            "type": "SYMPTOM",
+            "start": 324,
+            "end": 332,
+            "score": 0.9999,
+            "source": "Biomedical Model + Clinical Vocabulary"
+        },
+        {
+            "entity": "fatigue",
+            "type": "SYMPTOM",
+            "start": 337,
+            "end": 344,
+            "score": 1.0,
+            "source": "Biomedical Model + Clinical Vocabulary"
+        },
+        {
+            "entity": "diabetes mellitus",
+            "type": "DISEASE",
+            "start": 422,
+            "end": 439,
+            "score": null,
+            "source": "Clinical Vocabulary"
+        },
+        {
+            "entity": "hypertension",
+            "type": "DISEASE",
+            "start": 444,
+            "end": 456,
+            "score": null,
+            "source": "Clinical Vocabulary"
+        },
+        {
+            "entity": "metformin",
+            "type": "MEDICATION",
+            "start": 490,
+            "end": 499,
+            "score": 0.9986,
+            "source": "Biomedical Model + Clinical Vocabulary"
+        },
+        {
+            "entity": "diabetes",
+            "type": "DISEASE",
+            "start": 504,
+            "end": 512,
+            "score": null,
+            "source": "Clinical Vocabulary"
+        },
+        {
+            "entity": "medication",
+            "type": "MEDICATION",
+            "start": 517,
+            "end": 527,
+            "score": 0.9994,
+            "source": "Biomedical Model"
+        },
+        {
+            "entity": "hypertension",
+            "type": "DISEASE",
+            "start": 532,
+            "end": 544,
+            "score": null,
+            "source": "Clinical Vocabulary"
+        },
+        {
+            "entity": "clinical examination",
+            "type": "TEST",
+            "start": 553,
+            "end": 573,
+            "score": 0.9999,
+            "source": "Biomedical Model"
+        },
+        {
+            "entity": "Blood pressure",
+            "type": "TEST",
+            "start": 574,
+            "end": 588,
+            "score": 0.9999,
+            "source": "Biomedical Model + Clinical Vocabulary"
+        },
+        {
+            "entity": "Heart rate",
+            "type": "TEST",
+            "start": 628,
+            "end": 638,
+            "score": 1.0,
+            "source": "Biomedical Model + Clinical Vocabulary"
+        },
+        {
+            "entity": "shortness of breath",
+            "type": "SYMPTOM",
+            "start": 673,
+            "end": 692,
+            "score": null,
+            "source": "Clinical Vocabulary"
+        },
+        {
+            "entity": "Blood tests",
+            "type": "TEST",
+            "start": 728,
+            "end": 739,
+            "score": 0.9999,
+            "source": "Biomedical Model + Clinical Vocabulary"
+        },
+        {
+            "entity": "Blood glucose",
+            "type": "TEST",
+            "start": 756,
+            "end": 769,
+            "score": 1.0,
+            "source": "Biomedical Model + Clinical Vocabulary"
+        },
+        {
+            "entity": "Chest X-ray",
+            "type": "TEST",
+            "start": 792,
+            "end": 803,
+            "score": null,
+            "source": "Clinical Vocabulary"
+        },
+        {
+            "entity": "assessment",
+            "type": "TEST",
+            "start": 852,
+            "end": 862,
+            "score": 0.9995,
+            "source": "Biomedical Model"
+        },
+        {
+            "entity": "diabetes mellitus",
+            "type": "DISEASE",
+            "start": 879,
+            "end": 896,
+            "score": 0.8986,
+            "source": "Biomedical Model + Clinical Vocabulary"
+        },
+        {
+            "entity": "hypertension",
+            "type": "DISEASE",
+            "start": 901,
+            "end": 913,
+            "score": null,
+            "source": "Clinical Vocabulary"
+        },
+        {
+            "entity": "respiratory infection",
+            "type": "DISEASE",
+            "start": 924,
+            "end": 945,
+            "score": null,
+            "source": "Clinical Vocabulary"
+        },
+        {
+            "entity": "chest pain",
+            "type": "SYMPTOM",
+            "start": 979,
+            "end": 989,
+            "score": null,
+            "source": "Clinical Vocabulary"
+        },
+        {
+            "entity": "asthma",
+            "type": "DISEASE",
+            "start": 1005,
+            "end": 1011,
+            "score": null,
+            "source": "Clinical Vocabulary"
+        },
+        {
+            "entity": "diabetes",
+            "type": "DISEASE",
+            "start": 1076,
+            "end": 1084,
+            "score": null,
+            "source": "Clinical Vocabulary"
+        },
+        {
+            "entity": "blood pressure",
+            "type": "TEST",
+            "start": 1105,
+            "end": 1119,
+            "score": 1.0,
+            "source": "Biomedical Model + Clinical Vocabulary"
+        },
+        {
+            "entity": "blood glucose",
+            "type": "TEST",
+            "start": 1124,
+            "end": 1137,
+            "score": 0.9999,
+            "source": "Biomedical Model + Clinical Vocabulary"
+        },
+        {
+            "entity": "symptoms",
+            "type": "SYMPTOM",
+            "start": 1316,
+            "end": 1324,
+            "score": 0.9971,
+            "source": "Biomedical Model"
+        }
+    ],
+    "assertions": [
+        {
+            "sentence": "# CLINICAL PATIENT REPORT **Document ID:** HNLP-001 **Department:** General Medicine **Document Type:** Clinical Progress Note ### 1.",
+            "entity": "h",
+            "type": "TEST",
+            "assertion": "NOT_FOUND"
+        },
+        {
+            "sentence": "# CLINICAL PATIENT REPORT **Document ID:** HNLP-001 **Department:** General Medicine **Document Type:** Clinical Progress Note ### 1.",
+            "entity": "general",
+            "type": "MEDICATION",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "# CLINICAL PATIENT REPORT **Document ID:** HNLP-001 **Department:** General Medicine **Document Type:** Clinical Progress Note ### 1.",
+            "entity": "medicine",
+            "type": "TEST",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "Chief Complaints The patient reports fever, persistent cough, headache and fatigue for the last three days.",
+            "entity": "fever",
+            "type": "SYMPTOM",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "Chief Complaints The patient reports fever, persistent cough, headache and fatigue for the last three days.",
+            "entity": "persistent cough",
+            "type": "SYMPTOM",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "Chief Complaints The patient reports fever, persistent cough, headache and fatigue for the last three days.",
+            "entity": "headache",
+            "type": "SYMPTOM",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "Chief Complaints The patient reports fever, persistent cough, headache and fatigue for the last three days.",
+            "entity": "fatigue",
+            "type": "SYMPTOM",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "Medical History The patient has a history of diabetes mellitus and hypertension.",
+            "entity": "diabetes mellitus",
+            "type": "DISEASE",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "Medical History The patient has a history of diabetes mellitus and hypertension.",
+            "entity": "hypertension",
+            "type": "DISEASE",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "The patient is currently taking metformin for diabetes and medication for hypertension.",
+            "entity": "metformin",
+            "type": "MEDICATION",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "The patient is currently taking metformin for diabetes and medication for hypertension.",
+            "entity": "diabetes",
+            "type": "DISEASE",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "The patient is currently taking metformin for diabetes and medication for hypertension.",
+            "entity": "medication",
+            "type": "MEDICATION",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "The patient is currently taking metformin for diabetes and medication for hypertension.",
+            "entity": "hypertension",
+            "type": "DISEASE",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "Clinical Examination Blood pressure was monitored during the consultation.",
+            "entity": "clinical examination",
+            "type": "TEST",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "Clinical Examination Blood pressure was monitored during the consultation.",
+            "entity": "Blood pressure",
+            "type": "TEST",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "Heart rate was recorded.",
+            "entity": "Heart rate",
+            "type": "TEST",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "The patient reports shortness of breath.",
+            "entity": "shortness of breath",
+            "type": "SYMPTOM",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "Investigation and Findings Blood tests were performed.",
+            "entity": "Blood tests",
+            "type": "TEST",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "Blood glucose levels were elevated.",
+            "entity": "Blood glucose",
+            "type": "TEST",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "Chest X-ray was suggested for further investigation.",
+            "entity": "Chest X-ray",
+            "type": "TEST",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "Assessment The patient has diabetes mellitus and hypertension.",
+            "entity": "assessment",
+            "type": "TEST",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "Assessment The patient has diabetes mellitus and hypertension.",
+            "entity": "diabetes mellitus",
+            "type": "DISEASE",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "Assessment The patient has diabetes mellitus and hypertension.",
+            "entity": "hypertension",
+            "type": "DISEASE",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "Possible respiratory infection is suspected.",
+            "entity": "respiratory infection",
+            "type": "DISEASE",
+            "assertion": "POSSIBLE"
+        },
+        {
+            "sentence": "The patient denies chest pain.",
+            "entity": "chest pain",
+            "type": "SYMPTOM",
+            "assertion": "NEGATED"
+        },
+        {
+            "sentence": "No history of asthma was reported.",
+            "entity": "asthma",
+            "type": "DISEASE",
+            "assertion": "NEGATED"
+        },
+        {
+            "sentence": "Treatment and Plan Continue the prescribed diabetes medication.",
+            "entity": "diabetes",
+            "type": "DISEASE",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "Monitor blood pressure and blood glucose levels.",
+            "entity": "blood pressure",
+            "type": "TEST",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "Monitor blood pressure and blood glucose levels.",
+            "entity": "blood glucose",
+            "type": "TEST",
+            "assertion": "PRESENT"
+        },
+        {
+            "sentence": "Follow-up The patient is advised to return for follow-up after three days or earlier if symptoms worsen.",
+            "entity": "symptoms",
+            "type": "SYMPTOM",
+            "assertion": "PRESENT"
+        }
+    ],
+    "coreference": {
+        "original_text": "# CLINICAL PATIENT REPORT **Document ID:** HNLP-001 **Department:** General Medicine **Document Type:** Clinical Progress Note ### 1. Patient Information Patient Name: Sample Patient Age: 45 years Gender: Not specified Visit Type: Outpatient Consultation ### 2. Chief Complaints The patient reports fever, persistent cough, headache and fatigue for the last three days. ### 3. Medical History The patient has a history of diabetes mellitus and hypertension. The patient is currently taking metformin for diabetes and medication for hypertension. ### 4. Clinical Examination Blood pressure was monitored during the consultation. Heart rate was recorded. The patient reports shortness of breath. ### 5. Investigation and Findings Blood tests were performed. Blood glucose levels were elevated. Chest X-ray was suggested for further investigation. ### 6. Assessment The patient has diabetes mellitus and hypertension. Possible respiratory infection is suspected. The patient denies chest pain. No history of asthma was reported. ### 7. Treatment and Plan Continue the prescribed diabetes medication. Monitor blood pressure and blood glucose levels. Further investigation is recommended to evaluate the respiratory symptoms. ### 8. Follow-up The patient is advised to return for follow-up after three days or earlier if symptoms worsen.",
+        "resolved_text": "# CLINICAL Patient REPORT **Document ID:** HNLP-001 **Department:** General Medicine **Document Type:** Clinical Progress Note ### 1. Patient Information Patient Name: Sample Patient Age: 45 years Gender: Not specified Visit Type: Outpatient Consultation ### 2. Chief Complaints Patient reports fever, persistent cough, headache and fatigue for the last three days. ### 3. Medical History Patient has a history of diabetes mellitus and hypertension. Patient is currently taking metformin for diabetes and medication for hypertension. ### 4. Clinical Examination Blood pressure was monitored during the consultation. Heart rate was recorded. Patient reports shortness of breath. ### 5. Investigation and Findings Blood tests were performed. Blood glucose levels were elevated. Chest X-ray was suggested for further investigation. ### 6. Assessment Patient has diabetes mellitus and hypertension. Possible respiratory infection is suspected. Patient denies chest pain. No history of asthma was reported. ### 7. Treatment and Plan Continue the prescribed diabetes medication. Monitor blood pressure and blood glucose levels. Further investigation is recommended to evaluate the respiratory symptoms. ### 8. Follow-up Patient is advised to return for follow-up after three days or earlier if symptoms worsen.",
+        "coreference_links": [
+            {
+                "mention": "PATIENT",
+                "referent": "Patient",
+                "sentence": "# CLINICAL PATIENT REPORT **Document ID:** HNLP-001 **Department:** General Medicine **Document Type:** Clinical Progress Note ### 1."
+            },
+            {
+                "mention": "Patient",
+                "referent": "Patient",
+                "sentence": "Patient Information Patient Name: Sample Patient Age: 45 years Gender: Not specified Visit Type: Outpatient Consultation ### 2."
+            },
+            {
+                "mention": "Patient",
+                "referent": "Patient",
+                "sentence": "Patient Information Patient Name: Sample Patient Age: 45 years Gender: Not specified Visit Type: Outpatient Consultation ### 2."
+            },
+            {
+                "mention": "Patient",
+                "referent": "Patient",
+                "sentence": "Patient Information Patient Name: Sample Patient Age: 45 years Gender: Not specified Visit Type: Outpatient Consultation ### 2."
+            },
+            {
+                "mention": "The patient",
+                "referent": "Patient",
+                "sentence": "Chief Complaints The patient reports fever, persistent cough, headache and fatigue for the last three days."
+            },
+            {
+                "mention": "The patient",
+                "referent": "Patient",
+                "sentence": "Medical History The patient has a history of diabetes mellitus and hypertension."
+            },
+            {
+                "mention": "The patient",
+                "referent": "Patient",
+                "sentence": "The patient is currently taking metformin for diabetes and medication for hypertension."
+            },
+            {
+                "mention": "The patient",
+                "referent": "Patient",
+                "sentence": "The patient reports shortness of breath."
+            },
+            {
+                "mention": "The patient",
+                "referent": "Patient",
+                "sentence": "Assessment The patient has diabetes mellitus and hypertension."
+            },
+            {
+                "mention": "The patient",
+                "referent": "Patient",
+                "sentence": "The patient denies chest pain."
+            },
+            {
+                "mention": "The patient",
+                "referent": "Patient",
+                "sentence": "Follow-up The patient is advised to return for follow-up after three days or earlier if symptoms worsen."
+            }
+        ]
+    },
+    "relations": [
+        {
+            "subject": "Patient",
+            "relation": "HAS_SYMPTOM",
+            "object": "headache",
+            "assertion": "PRESENT",
+            "sentence": "Chief Complaints The patient reports fever, persistent cough, headache and fatigue for the last three days."
+        },
+        {
+            "subject": "Patient",
+            "relation": "HAS_SYMPTOM",
+            "object": "fatigue",
+            "assertion": "PRESENT",
+            "sentence": "Chief Complaints The patient reports fever, persistent cough, headache and fatigue for the last three days."
+        },
+        {
+            "subject": "Patient",
+            "relation": "HAS_SYMPTOM",
+            "object": "fever",
+            "assertion": "PRESENT",
+            "sentence": "Chief Complaints The patient reports fever, persistent cough, headache and fatigue for the last three days."
+        },
+        {
+            "subject": "Patient",
+            "relation": "HAS_SYMPTOM",
+            "object": "cough",
+            "assertion": "PRESENT",
+            "sentence": "Chief Complaints The patient reports fever, persistent cough, headache and fatigue for the last three days."
+        },
+        {
+            "subject": "Patient",
+            "relation": "HAS_DIAGNOSIS",
+            "object": "diabetes mellitus",
+            "assertion": "PRESENT",
+            "sentence": "Medical History The patient has a history of diabetes mellitus and hypertension."
+        },
+        {
+            "subject": "Patient",
+            "relation": "HAS_DIAGNOSIS",
+            "object": "hypertension",
+            "assertion": "PRESENT",
+            "sentence": "Medical History The patient has a history of diabetes mellitus and hypertension."
+        },
+        {
+            "subject": "Patient",
+            "relation": "HAS_DIAGNOSIS",
+            "object": "hypertension",
+            "assertion": "PRESENT",
+            "sentence": "The patient is currently taking metformin for diabetes and medication for hypertension."
+        },
+        {
+            "subject": "Patient",
+            "relation": "HAS_DIAGNOSIS",
+            "object": "diabetes",
+            "assertion": "PRESENT",
+            "sentence": "The patient is currently taking metformin for diabetes and medication for hypertension."
+        },
+        {
+            "subject": "Patient",
+            "relation": "TAKES_MEDICATION",
+            "object": "metformin",
+            "assertion": "PRESENT",
+            "sentence": "The patient is currently taking metformin for diabetes and medication for hypertension."
+        },
+        {
+            "subject": "Patient",
+            "relation": "UNDERWENT_TEST",
+            "object": "blood pressure",
+            "assertion": "PRESENT",
+            "sentence": "Clinical Examination Blood pressure was monitored during the consultation."
+        },
+        {
+            "subject": "Patient",
+            "relation": "HAS_SYMPTOM",
+            "object": "shortness of breath",
+            "assertion": "PRESENT",
+            "sentence": "The patient reports shortness of breath."
+        },
+        {
+            "subject": "Patient",
+            "relation": "UNDERWENT_TEST",
+            "object": "blood tests",
+            "assertion": "PRESENT",
+            "sentence": "Investigation and Findings Blood tests were performed."
+        },
+        {
+            "subject": "Patient",
+            "relation": "HAS_DIAGNOSIS",
+            "object": "diabetes mellitus",
+            "assertion": "PRESENT",
+            "sentence": "Assessment The patient has diabetes mellitus and hypertension."
+        },
+        {
+            "subject": "Patient",
+            "relation": "HAS_DIAGNOSIS",
+            "object": "hypertension",
+            "assertion": "PRESENT",
+            "sentence": "Assessment The patient has diabetes mellitus and hypertension."
+        },
+        {
+            "subject": "Patient",
+            "relation": "POSSIBLE_DIAGNOSIS",
+            "object": "respiratory infection",
+            "assertion": "POSSIBLE",
+            "sentence": "Possible respiratory infection is suspected."
+        },
+        {
+            "subject": "Patient",
+            "relation": "NEGATED_SYMPTOM",
+            "object": "chest pain",
+            "assertion": "NEGATED",
+            "sentence": "The patient denies chest pain."
+        },
+        {
+            "subject": "Patient",
+            "relation": "NEGATED_DIAGNOSIS",
+            "object": "asthma",
+            "assertion": "NEGATED",
+            "sentence": "No history of asthma was reported."
+        },
+        {
+            "subject": "Patient",
+            "relation": "HAS_DIAGNOSIS",
+            "object": "diabetes",
+            "assertion": "PRESENT",
+            "sentence": "Treatment and Plan Continue the prescribed diabetes medication."
+        }
+    ],
+    "salience": [
+        {
+            "entity": "diabetes mellitus",
+            "type": "DISEASE",
+            "salience_score": 5
+        },
+        {
+            "entity": "hypertension",
+            "type": "DISEASE",
+            "salience_score": 5
+        },
+        {
+            "entity": "diabetes",
+            "type": "DISEASE",
+            "salience_score": 5
+        },
+        {
+            "entity": "hypertension",
+            "type": "DISEASE",
+            "salience_score": 5
+        },
+        {
+            "entity": "diabetes mellitus",
+            "type": "DISEASE",
+            "salience_score": 5
+        },
+        {
+            "entity": "hypertension",
+            "type": "DISEASE",
+            "salience_score": 5
+        },
+        {
+            "entity": "respiratory infection",
+            "type": "DISEASE",
+            "salience_score": 5
+        },
+        {
+            "entity": "asthma",
+            "type": "DISEASE",
+            "salience_score": 5
+        },
+        {
+            "entity": "diabetes",
+            "type": "DISEASE",
+            "salience_score": 5
+        },
+        {
+            "entity": "general",
+            "type": "MEDICATION",
+            "salience_score": 4
+        },
+        {
+            "entity": "fever",
+            "type": "SYMPTOM",
+            "salience_score": 4
+        },
+        {
+            "entity": "persistent cough",
+            "type": "SYMPTOM",
+            "salience_score": 4
+        },
+        {
+            "entity": "headache",
+            "type": "SYMPTOM",
+            "salience_score": 4
+        },
+        {
+            "entity": "fatigue",
+            "type": "SYMPTOM",
+            "salience_score": 4
+        },
+        {
+            "entity": "metformin",
+            "type": "MEDICATION",
+            "salience_score": 4
+        },
+        {
+            "entity": "medication",
+            "type": "MEDICATION",
+            "salience_score": 4
+        },
+        {
+            "entity": "shortness of breath",
+            "type": "SYMPTOM",
+            "salience_score": 4
+        },
+        {
+            "entity": "chest pain",
+            "type": "SYMPTOM",
+            "salience_score": 4
+        },
+        {
+            "entity": "symptoms",
+            "type": "SYMPTOM",
+            "salience_score": 4
+        },
+        {
+            "entity": "h",
+            "type": "TEST",
+            "salience_score": 3
+        },
+        {
+            "entity": "medicine",
+            "type": "TEST",
+            "salience_score": 3
+        },
+        {
+            "entity": "clinical examination",
+            "type": "TEST",
+            "salience_score": 3
+        },
+        {
+            "entity": "Blood pressure",
+            "type": "TEST",
+            "salience_score": 3
+        },
+        {
+            "entity": "Heart rate",
+            "type": "TEST",
+            "salience_score": 3
+        },
+        {
+            "entity": "Blood tests",
+            "type": "TEST",
+            "salience_score": 3
+        },
+        {
+            "entity": "Blood glucose",
+            "type": "TEST",
+            "salience_score": 3
+        },
+        {
+            "entity": "Chest X-ray",
+            "type": "TEST",
+            "salience_score": 3
+        },
+        {
+            "entity": "assessment",
+            "type": "TEST",
+            "salience_score": 3
+        },
+        {
+            "entity": "blood pressure",
+            "type": "TEST",
+            "salience_score": 3
+        },
+        {
+            "entity": "blood glucose",
+            "type": "TEST",
+            "salience_score": 3
+        }
+    ],
+    "clinical_summary": {
+        "summary": "Medical History The patient has a history of diabetes mellitus and hypertension. The patient is currently taking metformin for diabetes and medication for hypertension. Clinical Examination Blood pressure was monitored during the consultation. Investigation and Findings Blood tests were performed. Blood glucose levels were elevated. Chest X-ray was suggested for further investigation. Assessment The patient has diabetes mellitus and hypertension. Possible respiratory infection is suspected. The patient denies chest pain. No history of asthma was reported. Treatment and Plan Continue the prescribed diabetes medication. Monitor blood pressure and blood glucose levels.",
+        "sentence_scores": [
+            {
+                "sentence": "CLINICAL PATIENT REPORT Document ID: HNLP-001 Department: General Medicine Document Type: Clinical Progress Note ### 1.",
+                "score": 0,
+                "section": null
+            },
+            {
+                "sentence": "Patient Information Patient Name: Sample Patient Age: 45 years Gender: Not specified Visit Type: Outpatient Consultation ### 2.",
+                "score": 0,
+                "section": null
+            },
+            {
+                "sentence": "Chief Complaints The patient reports fever, persistent cough, headache and fatigue for the last three days.",
+                "score": 4,
+                "section": "Chief Complaints"
+            },
+            {
+                "sentence": "### 3.",
+                "score": 0,
+                "section": null
+            },
+            {
+                "sentence": "Medical History The patient has a history of diabetes mellitus and hypertension.",
+                "score": 5,
+                "section": "Medical History"
+            },
+            {
+                "sentence": "The patient is currently taking metformin for diabetes and medication for hypertension.",
+                "score": 9,
+                "section": null
+            },
+            {
+                "sentence": "### 4.",
+                "score": 0,
+                "section": null
+            },
+            {
+                "sentence": "Clinical Examination Blood pressure was monitored during the consultation.",
+                "score": 5,
+                "section": "Clinical Examination"
+            },
+            {
+                "sentence": "Heart rate was recorded.",
+                "score": 3,
+                "section": null
+            },
+            {
+                "sentence": "The patient reports shortness of breath.",
+                "score": 4,
+                "section": null
+            },
+            {
+                "sentence": "### 5.",
+                "score": 0,
+                "section": null
+            },
+            {
+                "sentence": "Investigation and Findings Blood tests were performed.",
+                "score": 5,
+                "section": "Investigation and Findings"
+            },
+            {
+                "sentence": "Blood glucose levels were elevated.",
+                "score": 6,
+                "section": null
+            },
+            {
+                "sentence": "Chest X-ray was suggested for further investigation.",
+                "score": 5,
+                "section": "Investigation and Findings"
+            },
+            {
+                "sentence": "### 6.",
+                "score": 0,
+                "section": null
+            },
+            {
+                "sentence": "Assessment The patient has diabetes mellitus and hypertension.",
+                "score": 5,
+                "section": "Assessment"
+            },
+            {
+                "sentence": "Possible respiratory infection is suspected.",
+                "score": 11,
+                "section": null
+            },
+            {
+                "sentence": "The patient denies chest pain.",
+                "score": 7,
+                "section": null
+            },
+            {
+                "sentence": "No history of asthma was reported.",
+                "score": 8,
+                "section": "Medical History"
+            },
+            {
+                "sentence": "### 7.",
+                "score": 0,
+                "section": null
+            },
+            {
+                "sentence": "Treatment and Plan Continue the prescribed diabetes medication.",
+                "score": 11,
+                "section": "Treatment and Plan"
+            },
+            {
+                "sentence": "Monitor blood pressure and blood glucose levels.",
+                "score": 5,
+                "section": null
+            },
+            {
+                "sentence": "Further investigation is recommended to evaluate the respiratory symptoms.",
+                "score": 2,
+                "section": "Chief Complaints"
+            },
+            {
+                "sentence": "### 8.",
+                "score": 0,
+                "section": null
+            },
+            {
+                "sentence": "Follow-up The patient is advised to return for follow-up after three days or earlier if symptoms worsen.",
+                "score": 2,
+                "section": "Chief Complaints"
+            }
+        ]
+    }
+}

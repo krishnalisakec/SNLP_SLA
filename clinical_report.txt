@@ -1,0 +1,34 @@
+# CLINICAL PATIENT REPORT
+
+**Document ID:** HNLP-001  
+**Department:** General Medicine  
+**Document Type:** Clinical Progress Note
+
+### 1. Patient Information
+Patient Name: Sample Patient  
+Age: 45 years  
+Gender: Not specified  
+Visit Type: Outpatient Consultation
+
+### 2. Chief Complaints
+The patient reports fever, persistent cough, headache and fatigue for the last three days.
+
+### 3. Medical History
+The patient has a history of diabetes mellitus and hypertension. The patient is currently taking metformin for diabetes and medication for hypertension.
+
+### 4. Clinical Examination
+Blood pressure was monitored during the consultation. Heart rate was recorded. The patient reports shortness of breath.
+
+### 5. Investigation and Findings
+Blood tests were performed. Blood glucose levels were elevated. Chest X-ray was suggested for further investigation.
+
+### 6. Assessment
+The patient has diabetes mellitus and hypertension. Possible respiratory infection is suspected.
+
+The patient denies chest pain. No history of asthma was reported.
+
+### 7. Treatment and Plan
+Continue the prescribed diabetes medication. Monitor blood pressure and blood glucose levels. Further investigation is recommended to evaluate the respiratory symptoms.
+
+### 8. Follow-up
+The patient is advised to return for follow-up after three days or earlier if symptoms worsen.
